@@ -9,7 +9,8 @@ contract Projectify =
       link : string,
       images:string,
       owner:address,
-      timestamp: int }
+      timestamp: int,
+      purchased:bool }
   
   record state = 
     { projectLength : int,
@@ -41,7 +42,7 @@ contract Projectify =
     "Thank you for the tip"
 `;
 
-const contractAddress = 'ct_spc6oNbPRdV7nXd7tt5vbZJq23KovaaQL5xZ9sV5Sfc6fPjZa';
+const contractAddress = 'ct_2Gx3DPC6tQ2YWvMV9qyrMVQV36rU6gEs7jF9uSvRcBsg9X1mKL';
 var ProjectArray = [];
 var client = null;
 var contractInstance = null;
